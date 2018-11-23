@@ -27,4 +27,28 @@ def generator():
 
 g = generator()
 print(next(g))  # only display `this is a generator`
-print(next(g))  # Traceback(err) - StopIteration: this is return
+
+
+# print(next(g))  # Traceback(err) - StopIteration: this is return
+
+
+def generator_steps_by_step():
+    print('Before 1')
+    yield 1
+    print('After 1')
+    print('Before 2')
+    yield 2
+    print('After 2')
+    print('Before 3')
+    yield 3
+    print('After 3')
+
+
+print()
+g_steps = generator_steps_by_step()
+
+print('Got %d' % next(g_steps))
+print()
+print('Got %d' % next(g_steps))
+print()
+print('Got %d' % next(g_steps))
