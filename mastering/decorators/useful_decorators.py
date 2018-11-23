@@ -3,6 +3,7 @@ The collection of the useful decorators
 
     - Single dispatch – polymorphism in Python (GenericType def sum[T](num1,num2))
     - ContextManager(with) statement made easy
+        - with keyword to kill unmanaged resource by calling __enter__ and __exit__
     - Useless warning - how to ignore them
 """
 import contextlib
